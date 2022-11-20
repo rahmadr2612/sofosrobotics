@@ -145,6 +145,9 @@
             </ul>
         </div>
         </div>
+        <!-- @foreach ($penawaran as $row) : -->
+            <p>coba</p>
+        <!-- @endforeach; -->
         <div class="row portfolio-container pr-4 pl-4 justify-content-center">
                 <input type="hidden" name="idRobot" value="{{ $robot->id }}">
                 @foreach ($penawaran as $row)
@@ -152,7 +155,7 @@
                         <div class="card">
                             <h3 class="text-center">{{ $row->penawaran }}</h3>
                             <div class="text-center">
-                                {{-- <img src="{{ asset('assets/landing/img/robot/linetracking.png')}}" class="img-fluid text-center" alt=""> --}}
+                                <!-- <img src="{{ asset('assets/landing/img/robot/ . $row->image')}}" class="img-fluid text-center" alt=""> -->
                                 <img src="{{ url('') }}//assets/image/robot-master/{{ $row->image }}" alt="" class="img-fluid text-center">
                             </div>
                             <div class="text-center"><b> {{ $row->komponen }} </b></div><br>

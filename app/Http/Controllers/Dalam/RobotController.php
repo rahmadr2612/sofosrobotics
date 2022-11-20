@@ -10,6 +10,7 @@ use Illuminate\Http\Request;
 use App\Models\Robot_masterModel;
 
 class RobotController extends Controller
+
 {
 
     // Untuk panggil view
@@ -64,7 +65,7 @@ class RobotController extends Controller
             // $validatedData['image'] = $request->file('image')->store('robot-master');
             $file = $request->file('image');
             $fileName = Str::uuid()."_".time().".".$file->extension();
-            $file->move(public_path() . "/assets/image/robot-master/", $fileName);
+            $file->move(public_path() . "public/assets/image/robot-master/", $fileName);
             $validatedData['image'] = $fileName;
         }
 
@@ -90,6 +91,7 @@ class RobotController extends Controller
 
     public function destroy($id)
     {
-        //
+        Robot_masterModel :: destroy($id);
+        return redirect('/layout/admin/main');
     }
 }
