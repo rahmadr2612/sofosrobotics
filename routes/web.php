@@ -27,6 +27,7 @@ Route::resource('/robot', Depan\OrderController::class);
 Route::middleware(['admin'])->group(function () {
     Route::resource('/admin/robot', Dalam\RobotController::class);
     Route::resource('/admin/perangkat', Dalam\PerangkatController::class);
+    Route::resource('/admin/agenda', Dalam\AgendaController::class);
     Route::resource('/admin/penawaran', Dalam\PenawaranController::class);
     Route::resource('/admin/order', Dalam\OrderController::class);
     Route::resource('/admin', Dalam\DashboardController::class);

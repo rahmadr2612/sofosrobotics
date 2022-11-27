@@ -18,10 +18,10 @@
         <nav id="navbar" class="navbar">
             <ul>
                 <!-- <li><a class="nav-link scrollto active" href="{{ url('home')}}">Home</a></li> -->
-                <li><a class="nav-link scrollto active" href="#header">Home</a></li>
-                <li><a class="nav-link scrollto" href="#pricing">Produk</a></li>
-                <li><a class="nav-link scrollto" href="#faq">Agenda</a></li>
-                <li><a class="nav-link scrollto " href="#features">Komunitas</a></li>
+                <li><a class="nav-link scrollto active" href="index.html">Home</a></li>
+                <li><a class="nav-link scrollto" href="index.html/#pricing">Produk</a></li>
+                <li><a class="nav-link scrollto" href="index.html/#faq">Agenda</a></li>
+                <li><a class="nav-link scrollto " href="index.html/#features">Komunitas</a></li>
                 <!-- <li><a class="nav-link scrollto " href="#about">FAQ</a></li> -->
                 <li><a class="nav-link scrollto" href="#contact">Contact Us</a></li>
                 <li><a class="getstarted scrollto" href="{{ url('login')}}">Login</a></li>

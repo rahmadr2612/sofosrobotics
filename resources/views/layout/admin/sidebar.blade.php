@@ -20,6 +20,12 @@
                 <span>Master Perangkat</span>
             </a>
         </li>
+        <li>
+            <a href="{{ url('') }}/admin/agenda" class="waves-effect">
+                <i class="dripicons-user-group"></i>
+                <span>Master Event</span>
+            </a>
+        </li>
 
 
         <li class="menu-title">Management Robot</li>
