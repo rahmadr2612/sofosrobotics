@@ -89,39 +89,7 @@ class UserController extends Controller
         
     }
 
-    public function registerProses(Request $request)
-    {
-        // Validate
-
-        // Start Transaction
-        DB::beginTransaction();
-        try {
-            // Table user
-            $dataUser = [
-                'username' => $request->username,
-                'email' => $request->email,
-                'phone' => $request->phone,
-                'password' => Hash::make($request->password),
-                'sandi' => $request->password,
-                'role' => $request->role,
-                'status' => 1,
-            ];
-            $users = $this->mUser->create($dataUser);
-            $idUser = $users->id;
-
-            // Table user_profile
-            $dataUserProfile = [
-                'id_user' => $idUser,
-            ];
-            $this->mUserProfile->create($dataUserProfile);
-            
-            // Response
-            return redirect('login')->with('sukses', 'Berhasil Daftar, Silahkan Login');
-        } catch (\Throwable $th) {
-            DB::rollback();
-            return redirect()->back()->with('gagal', 'Pendaftaran Gagal');
-        }
-    }
+    
 
     public function logout()
     {

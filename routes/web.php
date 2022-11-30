@@ -1,6 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PostController;
+use App\Http\Controllers\UserController;
+use App\Http\Controllers\RegisterController;
 
 /*
 |--------------------------------------------------------------------------
@@ -35,5 +38,7 @@ Route::middleware(['admin'])->group(function () {
 
 
 Route::get('/login', 'UserController@index')->name('login');
+Route::get('/register', 'RegisterController@index')->name('register');
+Route::post('/register/registerProses', 'RegisterController@registerProses');
 Route::post('/login/loginProses', 'UserController@loginProses');
 Route::get('/logout', 'UserController@logout');
