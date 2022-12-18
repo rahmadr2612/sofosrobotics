@@ -36,7 +36,7 @@
                             @foreach ($penawaran as $pe)
                                 <tr>
                                     <td>{{ $loop->iteration }}</td>
-                                    <td>{{ $pe->robot->nama }}</td>
+                                    
                                     <td>{{ $pe->perangkat->nama }}</td>
                                     <td>{{ $pe->penawaran }}</td>
                                     <td>{{ $pe->komponen }}</td>

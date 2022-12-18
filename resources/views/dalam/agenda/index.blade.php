@@ -33,7 +33,7 @@
                             @foreach ($agenda as $ag)
                                 <tr>
                                     <td>{{ $loop->iteration }}</td>
-                                    <td>{{ $ag->judul }}</td>
+                                    <td>{{ $ag->nama }}</td>
                                     <td><img src="{{ asset('storage/'. $ag->image) }}" alt="" class="img-fluid me-3 b-r-10 img-100"></td>
                                     <td>
                                         <div class="btn-group" role="group">
@@ -42,7 +42,7 @@
                                                 <i class="mdi mdi-chevron-down"></i>
                                             </button>
                                             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="btnGroupVerticalDrop1">
-                                                <a class="dropdown-item" href="#">Ubah</a>
+                                                <!-- <a class="dropdown-item" href="#">Ubah</a> -->
                                                 <a class="dropdown-item remove" href="javascript:void(0);" data-id="#">Hapus</a>
                                             </div>
                                         </div>

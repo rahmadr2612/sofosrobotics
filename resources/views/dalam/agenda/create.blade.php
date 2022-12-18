@@ -22,7 +22,7 @@
                         <div class="mb-3 row">
                             <label class="col-sm-3 col-form-label">Nama Event *</label>
                             <div class="col-sm-9">
-                                <input class="form-control" name="judul" type="text" placeholder="Isi Nama Event" data-bs-original-title="" title="">
+                                <input class="form-control" name="nama" type="text" placeholder="Isi Nama Event" data-bs-original-title="" title="">
                             </div>
                         </div>
                         <div class="mb-3 row">

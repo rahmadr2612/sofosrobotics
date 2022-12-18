@@ -43,7 +43,7 @@
                                                 <i class="mdi mdi-chevron-down"></i>
                                             </button>
                                             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="btnGroupVerticalDrop1">
-                                                <a class="dropdown-item" href="#">Ubah</a>
+                                                <!-- <a class="dropdown-item" href="#">Ubah</a> -->
                                                 <a class="dropdown-item remove" href="javascript:void(0);" data-id="#">Hapus</a>
                                             </div>
                                         </div>

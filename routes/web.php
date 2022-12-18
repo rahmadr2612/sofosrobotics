@@ -27,6 +27,7 @@ Route::get('/detail', function () {
 Route::resource('/', Depan\DepanController::class);
 Route::resource('/robot', Depan\OrderController::class);
 
+
 Route::middleware(['admin'])->group(function () {
     Route::resource('/admin/robot', Dalam\RobotController::class);
     Route::resource('/admin/perangkat', Dalam\PerangkatController::class);
